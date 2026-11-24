@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - Coffee House</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <section class="cart-page">
+
+        <div class="cart-container">
+
+            <h1 class="cart-title">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Your Shopping Cart
+            </h1>
+
+            <p class="cart-subtitle">
+                Review your selected coffee items before checkout.
+            </p>
+
+            <div id="cart-items" class="cart-items">
+
+                <!-- Cart products will appear here through JavaScript -->
+
+            </div>
+
+            <div class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="cart-subtotal">Rs. 0</strong>
+                </div>
+
+                <div class="summary-actions">
+
+                    <a href="index.html#menu" class="button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Continue Shopping
+                    </a>
+
+                    <button type="button" id="checkout-button" class="button checkout-button">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Proceed to Checkout
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- CHECKOUT BILL -->
+
+<div id="checkout-bill" class="checkout-bill" style="display: none;">
+
+    <h2>
+        <i class="fa-solid fa-receipt"></i>
+        Order Bill
+    </h2>
+
+    <div id="bill-items"></div>
+
+    <div class="bill-divider"></div>
+
+    <div class="bill-row">
+        <span>Subtotal</span>
+        <strong id="bill-subtotal">Rs. 0</strong>
+    </div>
+
+    <div class="bill-row">
+        <span>Delivery Charges</span>
+        <strong id="bill-delivery">Rs. 100</strong>
+    </div>
+
+    <div class="bill-row bill-total">
+        <span>Total Amount</span>
+        <strong id="bill-total">Rs. 0</strong>
+    </div>
+
+    <button type="button" id="place-order-button" class="button">
+        <i class="fa-solid fa-check-circle"></i>
+        Place Order
+    </button>
+
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
